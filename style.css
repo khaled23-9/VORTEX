@@ -1,52 +1,24 @@
-:root {
-    --primary-yellow: #FFD700;
-    --gold: #C5A059;
-    --brown-gold: #5D3A1A;
-}
+:root { --gold: #D4AF37; --dark: #0a0a0a; }
 
-body {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://www.minecraft.net/content/dam/minecraft/home/Minecraft-Net-Hero.jpg');
-    background-size: cover;
-    font-family: 'Cairo', sans-serif;
-    color: white;
-    margin: 0;
-}
+body { background: var(--dark); color: white; font-family: 'Cairo', sans-serif; margin: 0; }
 
-.navbar {
-    background: rgba(197, 160, 89, 0.9);
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    backdrop-filter: blur(5px); /* تأثير ضبابي احترافي */
-}
+nav { display: flex; justify-content: space-between; padding: 20px 50px; background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); position: sticky; top: 0; }
+.logo { font-size: 28px; font-weight: bold; color: var(--gold); }
+.logo span { color: white; }
 
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
+.main-hero { text-align: center; padding: 100px 20px; background: radial-gradient(circle, #2a2a2a, #0a0a0a); }
 
-.btn {
-    background-color: var(--brown-gold);
-    color: #FFD700;
-    border: 2px solid var(--gold);
-    padding: 15px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s;
-    border-radius: 50px; /* زر دائري عصري */
+.ip-card { 
+    background: #1a1a1a; padding: 30px; border: 2px solid var(--gold);
+    display: inline-block; cursor: pointer; transition: 0.5s; border-radius: 20px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
+.ip-card:hover { transform: translateY(-10px); box-shadow: 0 0 30px var(--gold); }
 
-.btn:hover {
-    background-color: #FFD700;
-    color: black;
-    transform: scale(1.1); /* تكبير الزر عند المرور */
+.news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 50px; }
+.news-card { 
+    background: #151515; padding: 30px; border-radius: 15px; 
+    border-top: 5px solid var(--gold); transition: 0.3s;
 }
-
-.news-card {
-    background: rgba(0, 0, 0, 0.6);
-    border: 1px solid var(--gold);
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 600px;
-}
+.news-card:hover { background: #202020; }
+.badge { background: var(--gold); padding: 5px 10px; border-radius: 5px; font-size: 12px; }
