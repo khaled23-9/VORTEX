@@ -1,24 +1,25 @@
-:root { --gold: #D4AF37; --dark: #0a0a0a; }
+/* التصميم الأساسي */
+:root { --primary: #FFD700; --dark: #050505; --accent: #1a1a1a; }
 
-body { background: var(--dark); color: white; font-family: sans-serif; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--dark); color: white; font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; }
 
-nav { display: flex; justify-content: space-between; padding: 20px 50px; background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); position: sticky; top: 0; }
-.logo { font-size: 28px; font-weight: bold; color: var(--gold); }
-.logo span { color: white; }
+/* القائمة */
+.navbar { display: flex; justify-content: space-between; padding: 25px 80px; background: rgba(0,0,0,0.8); position: sticky; top:0; z-index: 1000; }
+.logo { font-size: 30px; font-weight: 800; color: var(--primary); }
+.nav-links { display: flex; list-style: none; gap: 30px; align-items: center; }
+.nav-btn { background: var(--primary); color: black; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
 
-.main-hero { text-align: center; padding: 100px 20px; background: radial-gradient(circle, #2a2a2a, #0a0a0a); }
+/* الواجهة */
+.hero { height: 80vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://wallpaperaccess.com/full/2212726.jpg'); background-size: cover; text-align: center; }
+.ip-container { background: var(--accent); padding: 40px; border: 2px solid var(--primary); margin-top: 30px; cursor: pointer; transition: 0.4s; }
+.ip-container:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--primary); }
 
-.ip-card { 
-    background: #1a1a1a; padding: 30px; border: 2px solid var(--gold);
-    display: inline-block; cursor: pointer; transition: 0.5s; border-radius: 20px;
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-}
-.ip-card:hover { transform: translateY(-10px); box-shadow: 0 0 30px var(--gold); }
+/* البطاقات */
+.stats { display: flex; justify-content: center; gap: 50px; padding: 50px; background: #0c0c0c; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px; }
+.card { background: var(--accent); padding: 30px; border-radius: 10px; border-bottom: 3px solid var(--primary); }
 
-.news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 50px; }
-.news-card { 
-    background: #151515; padding: 30px; border-radius: 15px; 
-    border-top: 5px solid var(--gold); transition: 0.3s;
-}
-.news-card:hover { background: #202020; }
-.badge { background: var(--gold); padding: 5px 10px; border-radius: 5px; font-size: 12px; }
+/* إضافات احترافية */
+h1 { font-size: 50px; margin-bottom: 20px; }
+h1 span { color: var(--primary); }
