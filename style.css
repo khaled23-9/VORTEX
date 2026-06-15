@@ -1,18 +1,52 @@
-body { background-color: #1a1a1a; color: #FFD700; font-family: Arial; margin: 0; text-align: center; }
-
-.navbar { background-color: #C5A059; padding: 20px; display: flex; justify-content: space-around; }
-.navbar a { color: white; text-decoration: none; font-weight: bold; }
-
-.hero { padding: 50px; }
-button { 
-    background-color: #8B4513; 
-    color: white; 
-    border: none; 
-    padding: 15px 30px; 
-    cursor: pointer; 
-    font-size: 18px; 
-    border-radius: 10px; 
+:root {
+    --primary-yellow: #FFD700;
+    --gold: #C5A059;
+    --brown-gold: #5D3A1A;
 }
 
-#news { margin-top: 50px; padding: 20px; }
-.post { background: #333; padding: 20px; border: 2px solid #C5A059; }
+body {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://www.minecraft.net/content/dam/minecraft/home/Minecraft-Net-Hero.jpg');
+    background-size: cover;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.navbar {
+    background: rgba(197, 160, 89, 0.9);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(5px); /* تأثير ضبابي احترافي */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.btn {
+    background-color: var(--brown-gold);
+    color: #FFD700;
+    border: 2px solid var(--gold);
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 50px; /* زر دائري عصري */
+}
+
+.btn:hover {
+    background-color: #FFD700;
+    color: black;
+    transform: scale(1.1); /* تكبير الزر عند المرور */
+}
+
+.news-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--gold);
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 600px;
+}
