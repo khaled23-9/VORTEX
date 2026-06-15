@@ -2,39 +2,40 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>VORTEX | فورتكس سيرفر</title>
+    <title>VORTEX | عالمك في ماين كرافت</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav>
         <div class="logo">VORTEX<span>MC</span></div>
-        <div class="menu">
-            <a href="#">الرئيسية</a>
-            <a href="#news">النشرات</a>
-            <a href="#" class="btn-sm">المتجر</a>
-        </div>
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#news">الأخبار</a></li>
+            <li><a href="#">المتجر</a></li>
+        </ul>
     </nav>
 
-    <main class="hero">
-        <h1>سيرفر فورتكس - مجتمعك الأفضل</h1>
-        <p>استمتع بتجربة ماين كرافت احترافية مع مجتمع رائع</p>
-        <div class="ip-box" onclick="copyIP()">
-            <span>اضغط لنسخ الأي بي:</span>
-            <h3>str.mcsh.io</h3>
+    <header class="main-hero">
+        <h1 class="fade-in">استعد للمغامرة في فورتكس</h1>
+        <div class="ip-card" onclick="copyIP()">
+            <span class="label">اضغط للنسخ</span>
+            <h2 id="ip-text">str.mcsh.io</h2>
         </div>
-    </main>
+    </header>
 
-    <section id="news">
-        <h2 class="section-title">أخبار فورتكس</h2>
-        <div class="news-container">
-            <div class="card">
-                <h3>تحديث السيزون الجديد</h3>
-                <p>تم إضافة نظام اقتصادي جديد ومهمات حصرية للاعبين!</p>
+    <section id="news" class="news-section">
+        <h2>نشرات السيرفر</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <span class="badge">تحديث</span>
+                <h3>نظام البناء الجديد</h3>
+                <p>تم تحسين سرعة بناء الموارد وتعديل أسعار السوق!</p>
             </div>
-            <div class="card">
-                <h3>نظام الحماية</h3>
-                <p>تم تحديث أنظمة الحماية لضمان تجربة لعب بدون لاق.</p>
+            <div class="news-card">
+                <span class="badge">فعالية</span>
+                <h3>مسابقة البناء الأسبوعية</h3>
+                <p>شارك معنا واكسب رتبة حصرية داخل السيرفر.</p>
             </div>
         </div>
     </section>
