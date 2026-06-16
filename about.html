@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن السيرفر | سيرفر فورتكس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="current-page-title">ℹ️ عن السيرفر</div>
+        
+        <div class="menu-container" onclick="toggleMenu()">
+            <span class="menu-text">شريط القوائم</span>
+            <button class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html" class="active">عن السيرفر</a></li>
+            <li><a href="staff.html">الطاقم الإداري</a></li>
+            <li><a href="rules.html">القوانين والحسابات</a></li>
+        </ul>
+    </nav>
+
+    <main class="container" style="margin-top: 40px;">
+        <section class="card">
+            <h2>مميزات السيرفر تبعنا 🌌</h2>
+            <p style="color: #9ca3af; margin-bottom: 25px; font-size: 1.1rem;">سيرفر بقاء (Survival) استثنائي صُمم بعناية ليوفر تجربة خالية من التخريب والملل تماماً.</p>
+            <ul style="padding-right: 25px; line-height: 2;">
+                <li><strong>نظام حماية الأراضي:</strong> ممتلكاتك وبناؤك مؤمنة بنسبة 100% بأوامر بسيطة تحميك ضد المخربين.</li>
+                <li><strong>اقتصاد متكامل:</strong> نظام بيع، شراء وتجارة متطور بين اللاعبين لإنشاء أسواقك الخاصة.</li>
+                <li><strong>التوافقية العالية:</strong> يدعم اللعب المشترك بين الحاسوب (Java) والهواتف الذكية (Bedrock).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لسيرفر فورتكس 🌀 VORTEX .</p>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById("navLinks").classList.toggle("show"); }
+    </script>
+</body>
+</html>
